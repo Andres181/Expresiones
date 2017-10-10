@@ -2,7 +2,7 @@ import re
 
 cadena = "A F M 5 # 1 / % * 5 R 5"
 lista = cadena.split(" ")
-patronVariables = re.compile('[A-Z]')
+patronVariables = re.compile('[A-Z]', re.I)
 patronValores = re.compile('[0-9]')
 patronSignos = re.compile('[+*/=-]')
 
