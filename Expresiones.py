@@ -1,6 +1,6 @@
 import re
 
-cadena = "A F M 5 # 1 / % * 5 R 5"
+Cadena =raw_input("Ingrese la operacion en posorden: ")
 lista = cadena.split(" ")
 patronVariables = re.compile('[A-Z]', re.I)
 patronValores = re.compile('[0-9]')
