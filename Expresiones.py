@@ -10,8 +10,11 @@ listaErrores1 = [x for x in lista if x not in patronVariables.findall(cadena)]
 listaErrores2 = [x for x in listaErrores1 if x not in patronValores.findall(cadena)]
 listaErroresFinal = [x for x in listaErrores2 if x not in patronSignos.findall(cadena)]
 
-for j in listaErroresFinal:
-    lista.remove(j)
+lista = [x for x in lista if x not in listaErroresFinal] 
+
+# Otra forma de solucionar
+# for j in listaErroresFinal: 
+  #  lista.remove(j)
 
 
 if len(listaErroresFinal)==0:
